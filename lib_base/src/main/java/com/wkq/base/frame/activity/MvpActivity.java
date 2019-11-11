@@ -28,7 +28,7 @@ public abstract class MvpActivity<V extends MvpView, P extends MvpPresenter<V>> 
 
     @NonNull
     public V createView() {
-        return ReflectUtil.instance(0,this);
+        return  ReflectUtil.instance(0, this.getClass(), this);
     }
 
     @NonNull

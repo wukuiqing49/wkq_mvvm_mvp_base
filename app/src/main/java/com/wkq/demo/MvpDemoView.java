@@ -14,6 +14,9 @@ import com.wkq.base.utils.AlertUtil;
  */
 public class MvpDemoView implements MvpView {
 
+    public MvpDemoView(MvpDemoActivity mvpDemoActivity) {
+    }
+
     public void showMessage(Context context, String mesage) {
         if (context == null) return;
         AlertUtil.showDeftToast(context, mesage);
