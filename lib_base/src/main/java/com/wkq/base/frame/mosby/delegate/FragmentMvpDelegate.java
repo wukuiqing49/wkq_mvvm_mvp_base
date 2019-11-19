@@ -19,9 +19,10 @@ package com.wkq.base.frame.mosby.delegate;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.View;
+import androidx.fragment.app.Fragment;
+
+import androidx.annotation.Nullable;
 
 /**
  * A delegate for Fragments to attach them to mosby mvp.

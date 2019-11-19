@@ -1,8 +1,9 @@
 package com.wkq.base.frame.mosby;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.wkq.base.frame.mosby.delegate.ActivityMvpDelegate;
 import com.wkq.base.frame.mosby.delegate.ActivityMvpDelegateImpl;

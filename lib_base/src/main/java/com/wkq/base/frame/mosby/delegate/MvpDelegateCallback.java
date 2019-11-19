@@ -16,7 +16,8 @@
 
 package com.wkq.base.frame.mosby.delegate;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 /**
  * The MvpDelegate callback that will be called from {@link
@@ -35,7 +36,8 @@ public interface MvpDelegateCallback<V extends MvpView, P extends MvpPresenter<V
    *
    * @return the created presenter instance
    */
-  @NonNull P createPresenter();
+  @NonNull
+  P createPresenter();
 
   /**
    * Gets the presenter. If null is returned, then a internally a new presenter instance gets

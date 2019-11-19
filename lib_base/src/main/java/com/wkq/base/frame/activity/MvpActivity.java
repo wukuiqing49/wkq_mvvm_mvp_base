@@ -1,7 +1,8 @@
 package com.wkq.base.frame.activity;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.wkq.base.frame.ReflectUtil;
 import com.wkq.base.frame.mosby.MvpBaseActivity;

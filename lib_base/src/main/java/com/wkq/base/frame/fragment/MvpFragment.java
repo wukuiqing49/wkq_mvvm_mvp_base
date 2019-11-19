@@ -1,11 +1,12 @@
 package com.wkq.base.frame.fragment;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.wkq.base.frame.ReflectUtil;
 import com.wkq.base.frame.mosby.MvpBaseFragment;
@@ -22,8 +23,7 @@ import com.wkq.base.frame.mosby.delegate.MvpView;
 public abstract class MvpFragment<V extends MvpView, P extends MvpPresenter<V>> extends MvpBaseFragment<V, P> {
 
     public V view;
-
-    @Nullable
+    @NonNull
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(getLayoutId(), container, false);

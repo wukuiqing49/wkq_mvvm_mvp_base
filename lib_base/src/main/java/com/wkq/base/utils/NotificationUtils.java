@@ -13,11 +13,12 @@ import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v4.content.FileProvider;
 import android.text.TextUtils;
 import android.util.Log;
 
+
+import androidx.annotation.RequiresApi;
+import androidx.core.content.FileProvider;
 
 import com.wkq.base.R;
 

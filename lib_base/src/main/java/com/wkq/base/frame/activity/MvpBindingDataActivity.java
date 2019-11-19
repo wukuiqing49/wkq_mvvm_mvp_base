@@ -1,8 +1,9 @@
 package com.wkq.base.frame.activity;
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
 import android.os.Bundle;
+
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
 
 import com.wkq.base.frame.ReflectUtil;
 import com.wkq.base.frame.mosby.delegate.MvpPresenter;

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.wkq.base.frame.activity.MvpBindingActivity;
-import com.wkq.demo.databinding.ActivityMvpDemoBinding;
+import com.wkq.demo.databinding.ActivityMvpBinding;
 
 /**
  * 作者: 吴奎庆
@@ -15,7 +15,7 @@ import com.wkq.demo.databinding.ActivityMvpDemoBinding;
  * <p>
  * 简介:
  */
-public class MvpDemoActivity extends MvpBindingActivity<MvpDemoView, MvpDemoPresaenter, ActivityMvpDemoBinding> implements View.OnClickListener {
+public class MvpDemoActivity extends MvpBindingActivity<MvpDemoView, MvpDemoPresaenter, ActivityMvpBinding> implements View.OnClickListener {
 
     public static void startActivity(Activity context) {
         Intent intent = new Intent();
@@ -25,7 +25,7 @@ public class MvpDemoActivity extends MvpBindingActivity<MvpDemoView, MvpDemoPres
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_mvp_demo;
+        return R.layout.activity_mvp;
     }
 
     @Override

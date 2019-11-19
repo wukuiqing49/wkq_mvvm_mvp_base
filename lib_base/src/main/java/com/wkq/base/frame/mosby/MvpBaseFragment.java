@@ -19,10 +19,11 @@ package com.wkq.base.frame.mosby;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.wkq.base.frame.mosby.delegate.FragmentMvpDelegate;
 import com.wkq.base.frame.mosby.delegate.FragmentMvpDelegateImpl;
@@ -68,7 +69,8 @@ public abstract class MvpBaseFragment<V extends MvpView, P extends MvpPresenter<
    *
    * @return {@link FragmentMvpDelegateImpl}
    */
-  @NonNull protected FragmentMvpDelegate<V, P> getMvpDelegate() {
+  @NonNull
+  protected FragmentMvpDelegate<V, P> getMvpDelegate() {
     if (mvpDelegate == null) {
       mvpDelegate = new FragmentMvpDelegateImpl<>(this, this, true, true);
     }

@@ -22,10 +22,12 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
+
+import androidx.annotation.NonNull;
+
 import java.util.UUID;
 
 /**
@@ -177,7 +179,6 @@ public class ViewGroupMvpDelegateImpl<V extends MvpView, P extends MvpPresenter<
   }
 
   /**
-   * Must be called from {@link View#onSaveInstanceState()}
    */
   public Parcelable onSaveInstanceState() {
     if (isInEditMode) return null;
@@ -201,7 +202,6 @@ public class ViewGroupMvpDelegateImpl<V extends MvpView, P extends MvpPresenter<
   }
 
   /**
-   * Must be called from {@link View#onRestoreInstanceState(Parcelable)}
    */
   public void onRestoreInstanceState(Parcelable state) {
     if (isInEditMode) return;

@@ -1,19 +1,21 @@
 package com.wkq.demo;
 
-        import android.databinding.DataBindingUtil;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.view.View;
+import android.os.Bundle;
+import android.view.View;
 
-        import com.wkq.base.utils.AlertUtil;
-        import com.wkq.demo.databinding.ActivityMainBinding;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
+import com.wkq.base.utils.AlertUtil;
+import com.wkq.demo.databinding.TestBinding;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+        TestBinding binding = DataBindingUtil.setContentView(this, R.layout.test);
         binding.setOnClick(this);
     }
 

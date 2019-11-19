@@ -1,8 +1,9 @@
 
 package com.wkq.base.frame.mosby.delegate;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.UiThread;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.UiThread;
 
 /**
  * Presenter的接口

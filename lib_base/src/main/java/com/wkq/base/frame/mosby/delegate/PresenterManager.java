@@ -5,12 +5,14 @@ import android.app.Application;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.os.Bundle;
-import android.support.annotation.MainThread;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.util.ArrayMap;
 import android.util.Log;
 import android.view.View;
+
+import androidx.annotation.MainThread;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.collection.ArrayMap;
+
 import java.util.Map;
 import java.util.UUID;
 
@@ -108,7 +110,9 @@ final public class PresenterManager {
    * @param activity The Activitiy for which you want to get the activity scope for
    * @return The {@link ActivityScopedCache} for the given Activity
    */
-  @NonNull @MainThread static ActivityScopedCache getOrCreateActivityScopedCache(
+  @NonNull
+  @MainThread
+  static ActivityScopedCache getOrCreateActivityScopedCache(
       @NonNull Activity activity) {
     if (activity == null) {
       throw new NullPointerException("Activity is null");
@@ -167,7 +171,8 @@ final public class PresenterManager {
    * @param <P> The Presenter type
    * @return The Presenter or <code>null</code>
    */
-  @Nullable public static <P> P getPresenter(@NonNull Activity activity, @NonNull String viewId) {
+  @Nullable
+  public static <P> P getPresenter(@NonNull Activity activity, @NonNull String viewId) {
     if (activity == null) {
       throw new NullPointerException("Activity is null");
     }

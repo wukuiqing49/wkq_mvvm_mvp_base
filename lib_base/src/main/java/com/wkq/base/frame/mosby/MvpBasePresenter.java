@@ -8,8 +8,8 @@ package com.wkq.base.frame.mosby;
  * 简介:
  */
 
-import android.support.annotation.NonNull;
-import android.support.annotation.UiThread;
+import androidx.annotation.NonNull;
+import androidx.annotation.UiThread;
 
 import com.wkq.base.frame.mosby.delegate.MvpPresenter;
 import com.wkq.base.frame.mosby.delegate.MvpView;
@@ -90,7 +90,8 @@ public class MvpBasePresenter<V extends MvpView> implements MvpPresenter<V> {
     private WeakReference<V> viewRef;
     private boolean presenterDestroyed = false;
 
-    @UiThread @Override public void attachView(V view) {
+    @UiThread
+    @Override public void attachView(V view) {
         viewRef = new WeakReference<V>(view);
         presenterDestroyed = false;
     }

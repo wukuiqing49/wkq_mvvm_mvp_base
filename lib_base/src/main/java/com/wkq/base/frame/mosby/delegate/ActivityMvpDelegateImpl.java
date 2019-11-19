@@ -18,8 +18,10 @@ package com.wkq.base.frame.mosby.delegate;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
+
 import java.util.UUID;
 
 /**
